@@ -1,4 +1,13 @@
-# Copy this file to .dev.vars and fill in your keys
+# Copy this file to .dev.vars and fill in your values
 # cp .dev.vars.example .dev.vars
 
-ANTHROPIC_API_KEY=your-anthropic-api-key-here
+# Using Ollama locally — no API key needed.
+# Make sure Ollama is running: `ollama serve`
+# And that you have pulled a tool-calling capable model, e.g.:
+#   ollama pull qwen2.5:7b
+# or
+#   ollama pull llama3.1:8b
+# or
+#   ollama pull nemotron-cascade-2
+OLLAMA_BASE_URL=http://localhost:11434/api
+OLLAMA_MODEL=nemotron-cascade-2
